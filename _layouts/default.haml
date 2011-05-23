@@ -1,0 +1,22 @@
+!!! 
+%html
+  %head
+    %title=title (title)
+    %script{:type => 'text/javascript'}
+      TITLE = "#{title}"
+    %script{:type => 'text/javascript', :src => '/js/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/raphael.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/jah.js'}
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/screen.css'}
+  %body
+    .outer-wrapper
+      .inner-wrapper
+        .header
+          %h1.site-title Jeffrey Alan Huston
+        .content
+          =render_partial("navigation",{:current_path => current_path })
+          = yield
+          #paper
+    .footer
+      %img{:src => "/images/figure.png", :alt => "figure.png"}
+      %p.footer-text &copy 2011 JeffreyAlanHuston
