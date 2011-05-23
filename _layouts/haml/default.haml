@@ -1,9 +1,11 @@
+---
+---
 !!! 
 %html
   %head
-    %title=title (title)
+    %title {{ page.title }}
     %script{:type => 'text/javascript'}
-      TITLE = "#{title}"
+      TITLE = {{ page.title }} 
     %script{:type => 'text/javascript', :src => '/js/jquery.min.js'}
     %script{:type => 'text/javascript', :src => '/js/raphael.min.js'}
     %script{:type => 'text/javascript', :src => '/js/jah.js'}
@@ -14,8 +16,8 @@
         .header
           %h1.site-title Jeffrey Alan Huston
         .content
-          =render_partial("navigation",{:current_path => current_path })
-          = yield
+          {% include navigation.haml %}
+          {{ content }}
           #paper
     .footer
       %img{:src => "/images/figure.png", :alt => "figure.png"}

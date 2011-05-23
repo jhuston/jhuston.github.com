@@ -1,0 +1,82 @@
+$site-width: 960px;
+$site-min-height: 500px;
+$bgcolor: #FFF;
+$bodycolor: #FFF;
+$border-color: #F00;
+$paragraph-color: #111;
+$main-page-pad: 5px;
+$main-text-pad: 15px;
+$title-size: 2em;
+
+html{
+  // @include linear-gradient(color_stops(#511212 33%, lighten(#511212, 70%)));
+}
+body{
+  background-color: $bodycolor;
+}
+.outer-wrapper{
+  position: relative;
+  width: $site-width;
+  min-height: $site-min-height;
+  margin: 0px auto;
+  background-color: $bgcolor;
+  // border: 1px solid;
+}
+
+.inner-wrapper{
+  padding: $main-page-pad;
+  // border: 1px solid;
+}
+
+.header{
+  height: 100px;
+}
+h1.site-title{
+  margin-top: 144px;
+  background: url(../images/site-title.png) no-repeat;
+  font-size: $title-size;
+  text-indent: -1000px;
+}
+.main-content{
+  clear: left;
+  padding-top: 5px;
+}
+.greeting{
+  width: 600px;
+  @include curled-box-shadow(#DA6647);
+  margin-bottom: 10px;
+  background-color: #DA6647;
+  p{
+    @include text-shadow();
+  }
+}
+
+.response{
+  @extend .greeting;
+  @include curled-box-shadow(#22A190);
+}
+.list-item{
+  @extend .greeting;
+  width: 200px;
+}
+p{
+  color: $paragraph-color;
+  padding: $main-text-pad;
+  .item{
+      background-color:#FFF;
+  }
+}
+.footer{
+  @include linear-gradient(color_stops(#FFF 66%,#D2D2D2));
+  border-top: 1px solid #d2d2d2;
+  height: 100px;
+  position: relative;
+  img{
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+

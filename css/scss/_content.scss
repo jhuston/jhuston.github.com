@@ -1,0 +1,28 @@
+$hoverColor: #222222;
+$skillsColor:#A2A2A2;
+$footerFontSize: 10px;
+#jeff-is{
+  li{
+    font: 14px Arial, Helvetica, sans-serif;
+    color: $skillsColor;
+    @include text-shadow(#FFF);
+  }
+}
+p.footer-text{
+  font-size: $footerFontSize;
+  color: $skillsColor;
+  float: right;
+  position: absolute;
+  bottom: 0px;
+  padding: 1px;
+}
+a{
+  color: $skillsColor;
+  text-decoration: none;
+}
+a:hover{
+  color: $hoverColor;
+}
+a.active{
+  @extend a:hover
+}

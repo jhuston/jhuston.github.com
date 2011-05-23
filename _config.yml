@@ -1,4 +1,5 @@
-exclude: _drafts TODO Thorfile
+exclude: _drafts TODO Thorfile public/
 permalink: pretty
 author: Jeffrey Alan Huston
 markdown: rdiscount
+
