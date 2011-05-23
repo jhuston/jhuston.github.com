@@ -1,3 +1,4 @@
+$:.unshift(File.dirname(__FILE__) + "_plugins")
 class Jah < Thor
   include Thor::Actions
 

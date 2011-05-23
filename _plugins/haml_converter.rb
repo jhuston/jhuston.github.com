@@ -16,6 +16,7 @@ module Jekyll
       engine = Haml::Engine.new(content)
       engine.render
     end
+
   end
 
   require 'sass'

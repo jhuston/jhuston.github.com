@@ -1,5 +1,7 @@
-exclude: _drafts TODO Thorfile public/
+exclude: _drafts TODO Thorfile public/ helpers.rb
 permalink: pretty
 author: Jeffrey Alan Huston
 markdown: rdiscount
-
+navigation:
+  -about
+  -works

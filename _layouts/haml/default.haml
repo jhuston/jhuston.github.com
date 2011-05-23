@@ -5,7 +5,7 @@
   %head
     %title {{ page.title }}
     %script{:type => 'text/javascript'}
-      TITLE = {{ page.title }} 
+      TITLE = "{{ page.title }}"
     %script{:type => 'text/javascript', :src => '/js/jquery.min.js'}
     %script{:type => 'text/javascript', :src => '/js/raphael.min.js'}
     %script{:type => 'text/javascript', :src => '/js/jah.js'}
@@ -16,9 +16,10 @@
         .header
           %h1.site-title Jeffrey Alan Huston
         .content
-          {% include navigation.haml %}
-          {{ content }}
-          #paper
+          :plain
+            {% include nav.html %}
+            {{ content }}
+        #paper
     .footer
       %img{:src => "/images/figure.png", :alt => "figure.png"}
       %p.footer-text &copy 2011 JeffreyAlanHuston
