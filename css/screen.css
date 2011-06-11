@@ -66,7 +66,7 @@ footer, header, hgroup, menu, nav, section {
 
 /* line 14, scss/_structure.scss */
 body {
-  background-color: white;
+  background-color: aqua;
 }
 
 /* line 17, scss/_structure.scss */
@@ -85,19 +85,19 @@ body {
 
 /* line 31, scss/_structure.scss */
 .header {
-  height: 100px;
+  height: 50px;
 }
 
 /* line 34, scss/_structure.scss */
 h1.site-title {
-  margin-top: 144px;
+  margin-top: 30px;
   background: url(../images/site-title.png) no-repeat;
   font-size: 2em;
   text-indent: -1000px;
 }
 
 /* line 40, scss/_structure.scss */
-.main-content {
+.content {
   clear: left;
   padding-top: 5px;
 }
@@ -177,7 +177,7 @@ h1.site-title {
 /* line 62, scss/_structure.scss */
 p {
   color: #111111;
-  padding: 15px;
+  padding: 0;
 }
 /* line 65, scss/_structure.scss */
 p .item {
@@ -186,21 +186,36 @@ p .item {
 
 /* line 69, scss/_structure.scss */
 .footer {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(66%, #ffffff), color-stop(100%, #d2d2d2));
-  background-image: -webkit-linear-gradient(top, #ffffff 66%, #d2d2d2);
-  background-image: -moz-linear-gradient(top, #ffffff 66%, #d2d2d2);
-  background-image: -o-linear-gradient(top, #ffffff 66%, #d2d2d2);
-  background-image: linear-gradient(top, #ffffff 66%, #d2d2d2);
-  border-top: 1px solid #d2d2d2;
-  height: 100px;
   position: relative;
 }
-/* line 74, scss/_structure.scss */
+/* line 71, scss/_structure.scss */
 .footer img {
   position: absolute;
   display: block;
   bottom: 20px;
   left: 20px;
+}
+
+/* line 79, scss/_structure.scss */
+#navigation {
+  width: 100%;
+  height: 40px;
+}
+
+/* line 84, scss/_structure.scss */
+#navigation ul {
+  list-style: none;
+}
+
+/* line 87, scss/_structure.scss */
+#navigation ul li {
+  float: left;
+  width: 60px;
+}
+
+/* line 91, scss/_structure.scss */
+#navigation ul li a {
+  padding: 0px 4px 0px 4px;
 }
 
 /* line 5, scss/_content.scss */
@@ -216,17 +231,24 @@ p.footer-text {
   color: #a2a2a2;
   float: right;
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
+  left: 60px;
   padding: 1px;
 }
 
-/* line 19, scss/_content.scss */
+/* line 20, scss/_content.scss */
 a {
   color: #a2a2a2;
   text-decoration: none;
 }
 
-/* line 23, scss/_content.scss */
-a:hover, a.active {
-  color: #222222;
+/* line 24, scss/_content.scss */
+a:hover {
+  color: #fdc34d;
+}
+
+/* line 27, scss/_content.scss */
+a.active {
+  color: #FFFFFF;
+  background-color: #FDC34D;
 }

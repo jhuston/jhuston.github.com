@@ -14,18 +14,32 @@
     <div class='outer-wrapper'>
       <div class='inner-wrapper'>
         <div class='header'>
-          <h1 class='site-title'>Jeffrey Alan Huston</h1>
+          <a href='/'>
+            <h1 class='site-title'>Jeffrey Alan Huston</h1>
+          </a>
+        </div>
+        <div id='navigation'>
+          {% include nav.html %}
         </div>
         <div class='content'>
-          {% include nav.html %}
           {{ content }}
         </div>
-        <div id='paper'></div>
       </div>
     </div>
     <div class='footer'>
-      <img alt='figure.png' src='/images/figure.png' />
-      <p class='footer-text'>&copy 2011 JeffreyAlanHuston</p>
     </div>
   </body>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12381984-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
 </html>

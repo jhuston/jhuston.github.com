@@ -1,18 +1,22 @@
 $site-width: 960px;
 $site-min-height: 500px;
 $bgcolor: #FFF;
-$bodycolor: #FFF;
+$bodycolor: #DADAEC;
 $border-color: #F00;
 $paragraph-color: #111;
 $main-page-pad: 5px;
-$main-text-pad: 15px;
+$main-text-pad: 0;
 $title-size: 2em;
 
 html{
-  // @include linear-gradient(color_stops(#511212 33%, lighten(#511212, 70%)));
+  
 }
 body{
-  background-color: $bodycolor;
+  background: $bodycolor url(../images/check_bg.png) repeat;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  text-shadow: 0 1px 0 #FFF;
 }
 .outer-wrapper{
   position: relative;
@@ -21,6 +25,7 @@ body{
   margin: 0px auto;
   background-color: $bgcolor;
   // border: 1px solid;
+  border-radius: 0 0 8px 8px;
 }
 
 .inner-wrapper{
@@ -29,17 +34,18 @@ body{
 }
 
 .header{
-  height: 100px;
+  height: 50px;
 }
 h1.site-title{
-  margin-top: 144px;
+  margin-top: 30px;
   background: url(../images/site-title.png) no-repeat;
   font-size: $title-size;
   text-indent: -1000px;
+  line-height: 1;
 }
-.main-content{
+.content{
   clear: left;
-  padding-top: 5px;
+  padding: 5px;
 }
 .greeting{
   width: 600px;
@@ -67,9 +73,6 @@ p{
   }
 }
 .footer{
-  @include linear-gradient(color_stops(#FFF 66%,#D2D2D2));
-  border-top: 1px solid #d2d2d2;
-  height: 100px;
   position: relative;
   img{
     position: absolute;
@@ -79,4 +82,29 @@ p{
   }
 }
 
+#navigation{
+  width: 30%;
+  height: 1.6em;
+  background: url(../images/check_bg.png);
+  margin-left: -5px;
+  border-radius: 0 6px 6px 0;
+}
 
+#navigation ul{
+  list-style:none;
+}
+#navigation ul li{
+  float: left;
+}
+#navigation ul li a{
+  color: #FFF;
+  text-shadow: none;
+  padding: 0px 10px 0px 10px;
+}
+
+.center-image{
+  padding: 20px 200px;
+}
+.center-image img{
+  border: 1px solid;
+}

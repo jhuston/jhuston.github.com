@@ -1,5 +1,3 @@
----
----
 !!! 
 %html
   %head
@@ -14,12 +12,28 @@
     .outer-wrapper
       .inner-wrapper
         .header
-          %h1.site-title Jeffrey Alan Huston
-        .content
+          %a{:href => "/"}
+            %h1.site-title Jeffrey Alan Huston
+        #navigation
           :plain
             {% include nav.html %}
-            {{ content }}
-        #paper
+
+        .content
+          {{ content }}
     .footer
-      %img{:src => "/images/figure.png", :alt => "figure.png"}
-      %p.footer-text &copy 2011 JeffreyAlanHuston
+      -# %img{:src => "/images/figure.png", :alt => "figure.png"}
+      -# %p.footer-text &copy 2011 JeffreyAlanHuston
+  :plain
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12381984-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
