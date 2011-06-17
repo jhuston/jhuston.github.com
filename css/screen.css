@@ -66,43 +66,49 @@ footer, header, hgroup, menu, nav, section {
 
 /* line 14, scss/_structure.scss */
 body {
-  background-color: aqua;
+  background: #dadaec url(../images/check_bg.png) repeat;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+  text-shadow: 0 1px 0 #FFF;
 }
 
-/* line 17, scss/_structure.scss */
+/* line 21, scss/_structure.scss */
 .outer-wrapper {
   position: relative;
   width: 960px;
   min-height: 500px;
   margin: 0px auto;
   background-color: white;
+  border-radius: 0 0 8px 8px;
 }
 
-/* line 26, scss/_structure.scss */
+/* line 31, scss/_structure.scss */
 .inner-wrapper {
   padding: 5px;
 }
 
-/* line 31, scss/_structure.scss */
+/* line 36, scss/_structure.scss */
 .header {
   height: 50px;
 }
 
-/* line 34, scss/_structure.scss */
+/* line 39, scss/_structure.scss */
 h1.site-title {
   margin-top: 30px;
   background: url(../images/site-title.png) no-repeat;
   font-size: 2em;
   text-indent: -1000px;
+  line-height: 1;
 }
 
-/* line 40, scss/_structure.scss */
+/* line 46, scss/_structure.scss */
 .content {
   clear: left;
-  padding-top: 5px;
+  padding: 5px;
 }
 
-/* line 44, scss/_structure.scss */
+/* line 50, scss/_structure.scss */
 .greeting, .response, .list-item {
   width: 600px;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(33%, #e38971), color-stop(100%, #da6647));
@@ -134,12 +140,12 @@ h1.site-title {
   height: 70%;
   z-index: -1;
 }
-/* line 49, scss/_structure.scss */
+/* line 55, scss/_structure.scss */
 .greeting p, .response p, .list-item p {
   text-shadow: #aaaaaa 0px 0px 1px;
 }
 
-/* line 54, scss/_structure.scss */
+/* line 60, scss/_structure.scss */
 .response {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(33%, #2bcbb6), color-stop(100%, #22a190));
   background-image: -webkit-linear-gradient(top, #2bcbb6 33%, #22a190);
@@ -169,26 +175,26 @@ h1.site-title {
   z-index: -1;
 }
 
-/* line 58, scss/_structure.scss */
+/* line 64, scss/_structure.scss */
 .list-item {
   width: 200px;
 }
 
-/* line 62, scss/_structure.scss */
+/* line 68, scss/_structure.scss */
 p {
   color: #111111;
   padding: 0;
 }
-/* line 65, scss/_structure.scss */
+/* line 71, scss/_structure.scss */
 p .item {
   background-color: #FFF;
 }
 
-/* line 69, scss/_structure.scss */
+/* line 75, scss/_structure.scss */
 .footer {
   position: relative;
 }
-/* line 71, scss/_structure.scss */
+/* line 77, scss/_structure.scss */
 .footer img {
   position: absolute;
   display: block;
@@ -196,26 +202,48 @@ p .item {
   left: 20px;
 }
 
-/* line 79, scss/_structure.scss */
+/* line 85, scss/_structure.scss */
 #navigation {
-  width: 100%;
-  height: 40px;
+  width: 30%;
+  height: 1.6em;
+  background: url(../images/check_bg.png);
+  margin-left: -5px;
+  border-radius: 0 6px 6px 0;
 }
 
-/* line 84, scss/_structure.scss */
+/* line 93, scss/_structure.scss */
 #navigation ul {
   list-style: none;
 }
 
-/* line 87, scss/_structure.scss */
+/* line 96, scss/_structure.scss */
 #navigation ul li {
   float: left;
-  width: 60px;
 }
 
-/* line 91, scss/_structure.scss */
+/* line 99, scss/_structure.scss */
 #navigation ul li a {
-  padding: 0px 4px 0px 4px;
+  color: #FFF;
+  text-shadow: none;
+  padding: 0px 10px 0px 10px;
+}
+
+/* line 105, scss/_structure.scss */
+.center-image {
+  padding: 20px 200px;
+}
+
+/* line 108, scss/_structure.scss */
+.center-image img {
+  border: 1px solid;
+}
+
+/* line 111, scss/_structure.scss */
+.signup-form {
+  width: 200px;
+  position: absolute;
+  top: 130px;
+  left: 10px;
 }
 
 /* line 5, scss/_content.scss */
@@ -226,6 +254,14 @@ p .item {
 }
 
 /* line 11, scss/_content.scss */
+h1 {
+  font-size: 1.5em;
+  background-color: #DDD;
+  margin: 15px 0;
+  width: 36%;
+}
+
+/* line 17, scss/_content.scss */
 p.footer-text {
   font-size: 10px;
   color: #a2a2a2;
@@ -236,19 +272,20 @@ p.footer-text {
   padding: 1px;
 }
 
-/* line 20, scss/_content.scss */
+/* line 26, scss/_content.scss */
 a {
   color: #a2a2a2;
   text-decoration: none;
 }
 
-/* line 24, scss/_content.scss */
+/* line 30, scss/_content.scss */
 a:hover {
   color: #fdc34d;
 }
 
-/* line 27, scss/_content.scss */
+/* line 33, scss/_content.scss */
 a.active {
   color: #FFFFFF;
   background-color: #FDC34D;
+  text-shadow: none;
 }

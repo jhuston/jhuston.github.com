@@ -9,4 +9,12 @@ class Jah < Thor
     })
     puts "done"
   end
+ 
+  desc "preview", "Compile site and watch for changes"
+  def preview
+    invoke :haml
+    system (%{
+      jekyll && compass compile --force && compass watch
+    })
+  end 
 end
