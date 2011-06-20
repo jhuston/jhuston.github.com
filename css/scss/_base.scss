@@ -8,23 +8,3 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/transform";
 @import "compass/css3/text-shadow";
-
-//Custom mixins here
-@mixin curled-box-shadow($color: white){
-  @include linear-gradient(color_stops(lighten($color, 10%) 33%, $color));
-  @include box-shadow(rgba(0,0,0,0.4),0px,1px,4px,0px);
-  position: relative;
-  border: 1px solid #EFEFEF;
-  &:after {
-    @include box-shadow(rgba(0,0,0,0.5),8px,6px,10px );
-    position: absolute;
-    content:'';
-    background: transparent;
-    bottom: 12px;
-    right: 8px;
-    width: 40%;
-    height: 70%;
-    // @include apply-transform(rotate(5deg) skew(10deg));
-    z-index: -1;
-  }
-}

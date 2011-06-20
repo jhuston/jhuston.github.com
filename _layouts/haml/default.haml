@@ -1,0 +1,44 @@
+!!! 5
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE-edge,chrome=1"}
+    %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0"}
+    %title {{ page.title }}
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/screen.css'}
+    %script{:type => 'text/javascript', :src => '/js/modernizr.js'}
+    %script{:type => 'text/javascript', :src => '/js/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => '/js/jah.js'}
+    %script{:type => 'text/javascript'}
+      TITLE = "{{ page.title }}"
+  %body
+    .outer-wrapper
+      .inner-wrapper
+        .header
+          %a{:href => "/"}
+            %h1.site-title Jeffrey Alan Huston
+        #infoSlider
+          %p
+        #navigation
+          :plain
+            {% include nav.html %}
+
+        .content
+          {{ content }}
+    .footer
+      -# %img{:src => "/images/figure.png", :alt => "figure.png"}
+      -# %p.footer-text &copy 2011 JeffreyAlanHuston
+  :plain
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12381984-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>

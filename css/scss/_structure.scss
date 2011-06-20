@@ -49,7 +49,6 @@ h1.site-title{
 }
 .greeting{
   width: 600px;
-  @include curled-box-shadow(#DA6647);
   margin-bottom: 10px;
   background-color: #DA6647;
   p{
@@ -59,7 +58,6 @@ h1.site-title{
 
 .response{
   @extend .greeting;
-  @include curled-box-shadow(#22A190);
 }
 .list-item{
   @extend .greeting;
@@ -83,10 +81,10 @@ p{
 }
 
 #navigation{
-  width: 30%;
   height: 1.6em;
-  background: url(../images/check_bg.png);
   margin-left: -5px;
+  width: 500px;
+  background: url(../images/check_bg.png);
   border-radius: 0 6px 6px 0;
 }
 
@@ -113,4 +111,17 @@ p{
   position: absolute;
   top: 130px;
   left: 10px;
+}
+.media-list p{
+  clear: both;
+  margin: 5px 0;
+}
+.media-list iframe{
+  background-color: #274056;
+  border-radius: 5px;
+  padding: 5px;
+}
+.boxshadow .media-list iframe{
+  box-shadow: 0 0 5px 0px #666;
+  background-color: #FFF;
 }

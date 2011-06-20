@@ -11,10 +11,17 @@ class Jah < Thor
   end
  
   desc "preview", "Compile site and watch for changes"
-  def preview
+  def preview( watch = "")
     invoke :haml
     system (%{
-      jekyll && compass compile --force && compass watch
+      jekyll && compass compile --force
     })
-  end 
+  end
+
+  desc "watch", "watch for css changes"
+  def watch
+    system(%{
+      compass watch
+    })
+  end
 end
