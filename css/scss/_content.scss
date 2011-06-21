@@ -1,13 +1,7 @@
 $hoverColor: #FDC34D;
 $skillsColor:#A2A2A2;
 $footerFontSize: 10px;
-#jeff-is{
-  li{
-    font: 14px Arial, Helvetica, sans-serif;
-    color: $skillsColor;
-    @include text-shadow(#FFF);
-  }
-}
+
 h1 {
   font-size: 1.5em;
   background-color: #DDD;

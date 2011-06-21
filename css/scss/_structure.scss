@@ -47,22 +47,8 @@ h1.site-title{
   clear: left;
   padding: 5px;
 }
-.greeting{
-  width: 600px;
-  margin-bottom: 10px;
-  background-color: #DA6647;
-  p{
-    @include text-shadow();
-  }
-}
 
-.response{
-  @extend .greeting;
-}
-.list-item{
-  @extend .greeting;
-  width: 200px;
-}
+
 p{
   color: $paragraph-color;
   padding: $main-text-pad;
