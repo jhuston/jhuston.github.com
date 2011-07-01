@@ -14,7 +14,7 @@ class Jah < Thor
   def preview( watch = "")
     invoke :haml
     system (%{
-      jekyll && compass compile --force
+      compass compile --force && jekyll
     })
   end
 
