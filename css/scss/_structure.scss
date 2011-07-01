@@ -1,5 +1,5 @@
-$site-width: 960px;
-$site-min-height: 500px;
+$site-width: 60em;
+$site-min-height: 31.25em;
 $bgcolor: #FFF;
 $bodycolor: #DADAEC;
 $border-color: #F00;
@@ -15,33 +15,43 @@ body{
   background: $bodycolor url(../images/check_bg.png) repeat;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5em;
-  font-size: 16px;
+  font-size: 100%;
   text-shadow: 0 1px 0 #FFF;
 }
+
+img,
+embed,
+iframe,
+object,
+video{
+  max-width: 100%;
+}
+
 .outer-wrapper{
   position: relative;
-  width: $site-width;
+  max-width: $site-width;
   min-height: $site-min-height;
   margin: 0px auto;
   background-color: $bgcolor;
-  // border: 1px solid;
   border-radius: 0 0 8px 8px;
 }
 
 .inner-wrapper{
   padding: $main-page-pad;
-  // border: 1px solid;
 }
 
 .header{
-  height: 50px;
+  height: 3.125em;
 }
 h1.site-title{
-  margin-top: 30px;
-  background: url(../images/site-title.png) no-repeat;
+  display: inline;
+  font-family: 'Inconsolata', Helvetica, Arial, sans-serif;
+  background: none;
+  margin-top: .575em;
   font-size: $title-size;
-  text-indent: -1000px;
-  line-height: 1;
+  max-width:100%;
+  color: #501212;
+  line-height: 1.5em;
 }
 .content{
   clear: left;
@@ -69,7 +79,7 @@ p{
 #navigation{
   height: 1.6em;
   margin-left: -5px;
-  width: 500px;
+  max-width: 30.125em;
   background: url(../images/check_bg.png);
   border-radius: 0 6px 6px 0;
 }
@@ -83,11 +93,34 @@ p{
 #navigation ul li a{
   color: #FFF;
   text-shadow: none;
-  padding: 0px 10px 0px 10px;
+  padding: 0 .625em 0 .625em;
 }
-
+#navigation ul li a:hover{
+  color: #FDC34D;
+}
+#navigation ul li a.active:hover{
+  color: #FFFFFF;
+}
+@media screen and (max-width: 480px){
+  #navigation{
+    border-radius: none;
+    background: none;
+  }
+  #navigation ul{
+    float: none;
+  }
+  #navigation ul li{
+    width: 100%;
+    background: url(../images/check_bg.png);
+  }
+  #navigation ul li a{
+    display: block;
+    border-bottom: 1px solid #FFF;
+  }
+}
 .center-image{
-  padding: 20px 200px;
+  padding: 1.25em .78125px;
+  text-align: center;
 }
 .center-image img{
   border: 1px solid;
@@ -97,6 +130,11 @@ p{
   position: absolute;
   top: 130px;
   left: 10px;
+}
+
+.media-list{
+  max-width: 22em;
+  padding-right: .5em;  
 }
 .media-list p{
   clear: both;

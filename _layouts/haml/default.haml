@@ -6,6 +6,7 @@
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0"}
     %title {{ page.title }}
     %link{:rel=>'stylesheet', :type=>'text/css', :href=>'/css/screen.css'}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Inconsolata&v1', :rel => 'stylesheet', :type => 'text/css'}
     %script{:type => 'text/javascript', :src => '/js/modernizr.js'}
     %script{:type => 'text/javascript', :src => '/js/jquery.min.js'}
     %script{:type => 'text/javascript', :src => '/js/jah.js'}
@@ -17,9 +18,6 @@
         .header
           %a{:href => "/"}
             %h1.site-title Jeffrey Alan Huston
-        #infoSlider
-          %img{:src => "/images/birdCorner.png" }
-          %p
         #navigation
           :plain
             {% include nav.html %}

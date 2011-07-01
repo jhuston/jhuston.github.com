@@ -1,12 +1,12 @@
 $hoverColor: #FDC34D;
 $skillsColor:#A2A2A2;
-$footerFontSize: 10px;
+$footerFontSize: .625em;
 
 h1 {
   font-size: 1.5em;
   background-color: #DDD;
-  margin: 15px 0;
-  width: 36%;
+  margin: .95em 0;
+  max-width: 100%;
 }
 p.footer-text{
   font-size: $footerFontSize;
