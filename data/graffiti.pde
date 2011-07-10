@@ -6,12 +6,10 @@
  */
 
 ArrayList circles;
-int BG = 0;
 int[] branch= new int[6];
 int num = 1;
 float angle = 30;
 int diam = 15;
-int diam2;
 color myC;
 boolean splatter=true;
 boolean single = true;
@@ -21,7 +19,7 @@ void setup() {
   ellipseMode(CENTER);
   size(800, 800);
   smooth(); 
-  background(BG);
+  background(255);
   circles = new ArrayList();
   cursor(CROSS);
 for(int i=5;i>=0;i--){
@@ -34,7 +32,7 @@ void draw() {
 //  background(255);
  if(keyPressed){
    if(key == 'c' || key =='C'){
-   background(BG);
+   background(255);
    }
    if(key == 's' || key =='S'){
    splatter = !splatter;
@@ -45,31 +43,50 @@ void draw() {
    }
  
  }
- if(mousePressed==true){
- myC = color(255,random(100),random(150),50);
-//      myC = color(0,0,0,255);
-    myXvector = (mouseX-pmouseX);
-    myYvector = (mouseY-pmouseY);
-  if(splatter == true){
-    circles.add(new Circle(mouseX,mouseY+5,diam,myXvector,myYvector,myC,(int)random(40)+20));
-  } 
-}
-
- //if(circles.size()>20){circles.remove(0);}
+ if(mousePressed){smoke();}
+ if(circles.size()>2){circles.remove(0);}
    for(int i=circles.size()-1; i >=0; i--){
       Circle circle = (Circle) circles.get(i);
       circle.update();
       circle.display();
       
-      if((circle.age<=1)||(circle.ypos<30)||(circle.ypos>height-30)||(circle.xpos>width-30)||(circle.xpos<30)){
-        circle.flower(circle.xpos,circle.ypos);
+      if((circle.age<=10)||(circle.ypos<30)||(circle.ypos>height-30)||(circle.xpos>width-30)||(circle.xpos<30)){
+       // circle.flower(circle.xpos,circle.ypos);
         circles.remove(i);
-      }         
+      }
+          if((circle.age==15)||(circle.age==10)){
+//            myC = color(255,0,0,255);
+    circles.add(new Circle(circle.xpos,circle.ypos,diam,-4+random(8),-4+random(8),myC,(int)random(60)+10));      
+    }  
   } 
  // println(circles.size());
 
 }
 
+void smoke(){
+  myC = color(255,random(100),random(150),50);
+//      myC = color(0,0,0,255);
+    myXvector = (mouseX-pmouseX);
+    myYvector = (mouseY-pmouseY);
+  if(splatter == true){
+    circles.add(new Circle(mouseX,mouseY+5,diam,myXvector,myYvector,myC,30));
+  }
+}
+void mousePressed(){
+  loop();
+  myC = color(255,random(100),random(150),255);
+//      myC = color(0,0,0,255);
+    myXvector = (mouseX-pmouseX);
+    myYvector = (mouseY-pmouseY);
+  if(splatter == true){
+    circles.add(new Circle(mouseX,mouseY+5,diam,myXvector,myYvector,myC,30));
+  }
+
+}
+
+void mouseRelease(){
+  single = true;
+}
 void keyPressed(){
  if(key == 'v' || key == 'V'){
   save("actionSketch"+num+".png");
@@ -100,7 +117,7 @@ class Circle{
   }
   
   void display(){
-    stroke(255);
+    stroke(0);
     strokeWeight(1+random(2));
 //    line(px2-2,py2-2,xpos-2,ypos-2);
     line(px2,py2,xpos,ypos);
@@ -115,26 +132,25 @@ class Circle{
   }
   
   void flower(float px,float py){
-    diam2=(int)random(10);
     angle =0;
     stroke(255,100);
-    strokeWeight(1);
     fill(0,random(255),random(150),150);
      // ellipse(px,py,10,10);
     for(int i =0;i<=6;i++){
       angle -=60;
-      px = px+(cos(radians(angle))*diam2);
-      py = py+(sin(radians(angle))*diam2);
-       ellipse(px,py,diam2,diam2);   
+      px = px+(cos(radians(angle))*5);
+      py = py+(sin(radians(angle))*5);
+       ellipse(px,py,5,5);   
     
     }
   }
   
   void update(){
     age -= 1;
-    xpos = xpos+(-2+random(4))+xVector;
-    ypos = ypos+(-2+random(4))+yVector;
+    xpos = xpos-(-2+random(4))+xVector;
+    ypos = ypos-(-2+random(4))-yVector;
     diameter = abs((diameter)-(random(.5)));
 
 }
 }
+

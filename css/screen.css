@@ -253,6 +253,13 @@ p .item {
   top: 0;
 }
 
+/* line 158, scss/_structure.scss */
+div.canvas {
+  width: 800px;
+  border: 1px solid;
+  margin: 0 auto;
+}
+
 /* line 5, scss/_content.scss */
 h1 {
   font-size: 1.5em;
