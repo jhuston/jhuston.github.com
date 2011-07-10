@@ -2,7 +2,10 @@
 layout: default
 ---
 <script src="/js/processing.js"></script> 
-<div class="canvas">
-  <canvas data-processing-sources="/data/graffiti.pde"></canvas>
-</div>
 
+{{page.content}}
+
+
+<div class="canvas">
+  <canvas data-processing-sources="/data/{{page.sketch}}"></canvas>
+</div>

@@ -1,5 +1,4 @@
 exclude: _drafts TODO Thorfile public/ helpers.rb Gemfile Gemfile.lock config.rb .sasscache
-permalink: pretty
 author: Jeffrey Alan Huston
 markdown: rdiscount
 navigation:
