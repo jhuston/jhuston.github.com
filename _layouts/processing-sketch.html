@@ -2,10 +2,20 @@
 layout: default
 ---
 <script src="/js/processing.js"></script> 
-
-{{page.content}}
-
-
+<script type="text/javascript">
+  function exportImage(){
+    var sketch = document.getElementById("processingSketch");
+    var context = sketch.getContext("2d");
+   // var durl = sketch.toDataURL("image/png");
+    window.open(sketch.toDataURL("image/png"),"my window");
+        }
+</script>
 <div class="canvas">
-  <canvas data-processing-sources="/data/{{page.sketch}}"></canvas>
+  <h1>{{page.title}}</h1>
+  <p>{{page.desc}}
+    <a class="export-btn" onClick=exportImage() target="_blank">Export Image</a>
+  </p>
+
+
+  <canvas id="processingSketch" data-processing-sources="/data/{{page.sketch}}"></canvas>
 </div>

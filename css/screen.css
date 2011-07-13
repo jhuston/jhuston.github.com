@@ -256,8 +256,14 @@ p .item {
 /* line 158, scss/_structure.scss */
 div.canvas {
   width: 800px;
-  border: 1px solid;
-  margin: 0 auto;
+  margin: 5px auto;
+}
+
+/* line 162, scss/_structure.scss */
+canvas#processingSketch {
+  border-radius: 8px;
+  box-shadow: #444 0 1px 5px;
+  outline: none;
 }
 
 /* line 5, scss/_content.scss */
@@ -294,5 +300,31 @@ a:hover {
 a.active {
   color: #FFFFFF;
   background-color: #FDC34D;
+  text-shadow: none;
+}
+
+/* line 33, scss/_content.scss */
+a.export-btn {
+  color: #444;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 3px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #aaaaaa));
+  background: -webkit-linear-gradient(#eeeeee, #aaaaaa);
+  background: -moz-linear-gradient(#eeeeee, #aaaaaa);
+  background: -o-linear-gradient(#eeeeee, #aaaaaa);
+  background: linear-gradient(#eeeeee, #aaaaaa);
+  float: right;
+  margin-bottom: 5px;
+  line-height: 16px;
+  font-size: 0.75em;
+}
+
+/* line 45, scss/_content.scss */
+a.export-btn:hover {
+  background: #CB4B16;
+  color: #FFF;
+  border: #444 1px solid;
   text-shadow: none;
 }

@@ -29,3 +29,22 @@ a.active{
   background-color: #FDC34D;  
   text-shadow: none;
 }
+
+a.export-btn{
+  color: #444;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 3px;
+  @include background(linear-gradient(#EEE,#AAA));
+  float: right;
+  margin-bottom: 5px;
+  line-height: 16px;
+  font-size: 0.75em;
+}
+a.export-btn:hover{
+  background: #CB4B16;
+  color: #FFF;
+  border: #444 1px solid;
+  text-shadow: none;
+}
