@@ -1,5 +1,5 @@
 $hoverColor: #FDC34D;
-$skillsColor:#A2A2A2;
+$skillsColor:#08C;
 $footerFontSize: .625em;
 
 h1 {
@@ -43,7 +43,7 @@ a.export-btn{
   font-size: 0.75em;
 }
 a.export-btn:hover{
-  background: #CB4B16;
+  @include background(linear-gradient(#E75D23,#CB4B16));
   color: #FFF;
   border: #444 1px solid;
   text-shadow: none;

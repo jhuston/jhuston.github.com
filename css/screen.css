@@ -1,4 +1,4 @@
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,51 +20,51 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 115, /Users/jeff/.rvm/gems/ruby-1.9.2-p180@jah.com/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 14, scss/_structure.scss */
+/* line 14, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 body {
   background: #dadaec url(../images/check_bg.png) repeat;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -73,7 +73,7 @@ body {
   text-shadow: 0 1px 0 #FFF;
 }
 
-/* line 26, scss/_structure.scss */
+/* line 26, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 img,
 embed,
 iframe,
@@ -82,7 +82,7 @@ video {
   max-width: 100%;
 }
 
-/* line 30, scss/_structure.scss */
+/* line 30, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .outer-wrapper {
   position: relative;
   max-width: 60em;
@@ -92,17 +92,17 @@ video {
   border-radius: 0 0 8px 8px;
 }
 
-/* line 39, scss/_structure.scss */
+/* line 39, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .inner-wrapper {
   padding: 5px;
 }
 
-/* line 43, scss/_structure.scss */
+/* line 43, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .header {
   height: 3.125em;
 }
 
-/* line 46, scss/_structure.scss */
+/* line 46, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 h1.site-title {
   display: inline;
   font-family: 'Inconsolata', Helvetica, Arial, sans-serif;
@@ -114,27 +114,27 @@ h1.site-title {
   line-height: 1.5em;
 }
 
-/* line 56, scss/_structure.scss */
+/* line 56, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .content {
   clear: left;
   padding: 5px;
 }
 
-/* line 62, scss/_structure.scss */
+/* line 62, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 p {
   color: #111111;
   padding: 0;
 }
-/* line 65, scss/_structure.scss */
+/* line 65, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 p .item {
   background-color: #FFF;
 }
 
-/* line 69, scss/_structure.scss */
+/* line 69, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .footer {
   position: relative;
 }
-/* line 71, scss/_structure.scss */
+/* line 71, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .footer img {
   position: absolute;
   display: block;
@@ -142,7 +142,7 @@ p .item {
   left: 20px;
 }
 
-/* line 79, scss/_structure.scss */
+/* line 79, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #navigation {
   height: 1.6em;
   margin-left: -5px;
@@ -151,69 +151,69 @@ p .item {
   border-radius: 0 6px 6px 0;
 }
 
-/* line 87, scss/_structure.scss */
+/* line 87, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #navigation ul {
   list-style: none;
 }
 
-/* line 90, scss/_structure.scss */
+/* line 90, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #navigation ul li {
   float: left;
 }
 
-/* line 93, scss/_structure.scss */
+/* line 93, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #navigation ul li a {
   color: #FFF;
   text-shadow: none;
   padding: 0 .625em 0 .625em;
 }
 
-/* line 98, scss/_structure.scss */
+/* line 98, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #navigation ul li a:hover {
   color: #FDC34D;
 }
 
-/* line 101, scss/_structure.scss */
+/* line 101, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #navigation ul li a.active:hover {
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 105, scss/_structure.scss */
+  /* line 105, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
   #navigation {
     border-radius: none;
     background: none;
   }
 
-  /* line 109, scss/_structure.scss */
+  /* line 109, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
   #navigation ul {
     float: none;
   }
 
-  /* line 112, scss/_structure.scss */
+  /* line 112, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
   #navigation ul li {
     width: 100%;
     background: url(../images/check_bg.png);
   }
 
-  /* line 116, scss/_structure.scss */
+  /* line 116, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
   #navigation ul li a {
     display: block;
     border-bottom: 1px solid #FFF;
   }
 }
-/* line 121, scss/_structure.scss */
+/* line 121, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .center-image {
   padding: 1.25em .78125px;
   text-align: center;
 }
 
-/* line 125, scss/_structure.scss */
+/* line 125, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .center-image img {
   border: 1px solid;
 }
 
-/* line 128, scss/_structure.scss */
+/* line 128, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .signup-form {
   width: 200px;
   position: absolute;
@@ -221,52 +221,52 @@ p .item {
   left: 10px;
 }
 
-/* line 135, scss/_structure.scss */
+/* line 135, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .media-list {
   max-width: 22em;
   padding-right: .5em;
 }
 
-/* line 139, scss/_structure.scss */
+/* line 139, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .media-list p {
   clear: both;
   margin: 5px 0;
 }
 
-/* line 143, scss/_structure.scss */
+/* line 143, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .media-list iframe {
   background-color: #274056;
   border-radius: 5px;
   padding: 5px;
 }
 
-/* line 148, scss/_structure.scss */
+/* line 148, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 .boxshadow .media-list iframe {
   box-shadow: 0 0 5px 0px #666;
   background-color: #FFF;
 }
 
-/* line 152, scss/_structure.scss */
+/* line 152, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 #infoSlider {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 158, scss/_structure.scss */
+/* line 158, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 div.canvas {
-  width: 800px;
+  width: 50em;
   margin: 5px auto;
 }
 
-/* line 162, scss/_structure.scss */
+/* line 162, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_structure.scss */
 canvas#processingSketch {
   border-radius: 8px;
   box-shadow: #444 0 1px 5px;
   outline: none;
 }
 
-/* line 5, scss/_content.scss */
+/* line 5, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 h1 {
   font-size: 1.5em;
   background-color: #DDD;
@@ -274,10 +274,10 @@ h1 {
   max-width: 100%;
 }
 
-/* line 11, scss/_content.scss */
+/* line 11, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 p.footer-text {
   font-size: 0.625em;
-  color: #a2a2a2;
+  color: #0088cc;
   float: right;
   position: absolute;
   bottom: 20px;
@@ -285,25 +285,25 @@ p.footer-text {
   padding: 1px;
 }
 
-/* line 20, scss/_content.scss */
+/* line 20, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 a {
-  color: #a2a2a2;
+  color: #0088cc;
   text-decoration: none;
 }
 
-/* line 24, scss/_content.scss */
+/* line 24, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 a:hover {
   color: #fdc34d;
 }
 
-/* line 27, scss/_content.scss */
+/* line 27, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 a.active {
   color: #FFFFFF;
   background-color: #FDC34D;
   text-shadow: none;
 }
 
-/* line 33, scss/_content.scss */
+/* line 33, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 a.export-btn {
   color: #444;
   border: 1px solid;
@@ -321,9 +321,13 @@ a.export-btn {
   font-size: 0.75em;
 }
 
-/* line 45, scss/_content.scss */
+/* line 45, /Users/jeff/Developer/Projects/jeffreyalanhuston.com/site/css/scss/_content.scss */
 a.export-btn:hover {
-  background: #CB4B16;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e75d23), color-stop(100%, #cb4b16));
+  background: -webkit-linear-gradient(#e75d23, #cb4b16);
+  background: -moz-linear-gradient(#e75d23, #cb4b16);
+  background: -o-linear-gradient(#e75d23, #cb4b16);
+  background: linear-gradient(#e75d23, #cb4b16);
   color: #FFF;
   border: #444 1px solid;
   text-shadow: none;
